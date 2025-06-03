@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Green Food</title>
+  <link rel="shortcut icon" href="imagens/flaticon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/variaveis.css">
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    .navbar img{
+        margin-top: -90px;
+        width: 100%;
+    }
+
+    
+  </style>
+  <script src="js/script.js"></script>
+</head>
+<body>
+    <div>
+        <div class="navbar">
+            <img src="imagens/navbar.jpg" />
+        </div>
+        <a href="equipa.html">Ver tudo</a>
+        <div class="container">
+            <div class="width-80">
+                <div>
+                    <iframe name="receitas-todas" src="iframe/card_receita.html" width="100%" frameborder="0" height="380px"></iframe>
+                    <div class="button" name="iframe-meio">
+                        <a href="receitas.html">Ver tudo</a>
+                        <a onclick="abrirNaIframe('missao.html')">Missão</a>
+                    </div>
+                </div>
+                <div>
+                    <iframe class="margin-top-50" src="iframe/card_chefs.html" frameborder="0" name="chefes-todos" width="100%" height="380px" ></iframe>
+                    <div class="button">
+                        <a onclick="abrirNaIframe('equipa.html')">Ver tudo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

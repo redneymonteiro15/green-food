@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Receita - Green Food</title>
+  <link rel="shortcut icon" href="imagens/flaticon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/variaveis.css">
+  <style>
+    .container {
+      overflow: hidden;
+    }
+
+    .titulo-receita h2 {
+      font-size: var(--titulo-tamanho);
+      margin-bottom: 0;
+    }
+
+    .titulo-receita span {
+      color: var(--cor-primaria);
+      font-weight: bold;
+    }
+
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+
+    .ingredientes, .preparacao {
+      flex: 1;
+    }
+
+    .ingredientes table, .tempo table {
+      border: 1px solid var(--cor-texto);
+      border-radius: 12px;
+      width: 100%;
+    }
+
+    .ingredientes td, .tempo td {
+      padding: 8px;
+    }
+
+    .ingredientes td:first-child {
+      width: 30px;
+      text-align: center;
+    }
+
+    .preparacao table {
+      width: 100%;
+    }
+
+    .preparacao td {
+      padding: 10px 0;
+      vertical-align: top;
+    }
+
+    .preparacao .numero {
+      font-weight: bold;
+      color: var(--cor-primaria);
+      padding-right: 10px;
+    }
+  </style>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <iframe class="iframe-100" src="iframe/header.html" frameborder="0"></iframe>
+
+  <div class="container width-80">
+    <div class="titulo-receita">
+      <a href="receitas.html"><img src="imagens/back.png" /></a>
+      <h2>Pão Mármore de Banana – Vegan</h2>
+      <p>Receita de <span>Carlos Afonso</span></p>
+    </div>
+
+    <div>
+      <iframe width="900" height="500" src="https://www.youtube.com/embed/euufBiax_0Y?si=69dFULwh__SP33T_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
+
+    <div class="tempo">
+      <h3>Tempos</h3>
+      <table>
+        <tr><td>⏳</td><td><strong>Tempo Total:</strong> 40 minutos</td></tr>
+      </table>
+    </div>
+
+    <div class="info">
+      <div class="ingredientes">
+        <h3>Ingredientes</h3>
+        <table>
+          <tr><td>🌾</td><td>3 chávenas de farinha (sem fermento)</td></tr>
+          <tr><td>⚗️</td><td>4 colheres de sopa de fermento</td></tr>
+          <tr><td>🍬</td><td>1/2 chávena de açúcar + açúcar para polvilhar</td></tr>
+          <tr><td>🍫</td><td>4 colheres de sopa de alfarroba</td></tr>
+          <tr><td>🌰</td><td>1 colher de sopa de maca</td></tr>
+          <tr><td>🧪</td><td>1 colher de chá de bicarbonato de sódio</td></tr>
+          <tr><td>🌿</td><td>1 colher de café de baunilha</td></tr>
+          <tr><td>🍌</td><td>3 + 1 bananas</td></tr>
+          <tr><td>🥥</td><td>150 ml de leite de coco evaporado ou bebida vegetal</td></tr>
+          <tr><td>🛢️</td><td>1 chávena de óleo</td></tr>
+          <tr><td>🍫</td><td>1 barra ou pepitas de chocolate vegan</td></tr>
+          <tr><td>🥜</td><td>Nozes q.b.</td></tr>
+          <tr><td>🥥</td><td>Óleo de coco (para caramelizar)</td></tr>
+        </table>
+      </div>
+
+      <div class="preparacao">
+        <h3>Preparação</h3>
+        <table>
+          <tr><td class="numero">1.</td><td>Pré-aquecer o forno a 180ºC.</td></tr>
+          <tr><td class="numero">2.</td><td>Usar uma forma grande ou reduzir as quantidades para formas menores.</td></tr>
+          <tr><td class="numero">3.</td><td>Misturar os ingredientes secos, exceto a alfarroba e a maca.</td></tr>
+          <tr><td class="numero">4.</td><td>Noutro recipiente, esmagar 3 bananas, adicionar a bebida vegetal e o óleo.</td></tr>
+          <tr><td class="numero">5.</td><td>Juntar os secos com os húmidos e bater bem até obter massa homogénea.</td></tr>
+          <tr><td class="numero">6.</td><td>Dividir a massa em duas partes. Numa, adicionar a alfarroba, a maca e o chocolate vegan.</td></tr>
+          <tr><td class="numero">7.</td><td>Na outra metade, juntar nozes partidas grosseiramente.</td></tr>
+          <tr><td class="numero">8.</td><td>Dispor as massas na forma alternadamente para formar o efeito mármore.</td></tr>
+          <tr><td class="numero">9.</td><td>Cortar 1 banana ao meio e colocar por cima. Salpicar com nozes e açúcar, pincelar com óleo de coco.</td></tr>
+          <tr><td class="numero">10.</td><td>Levar ao forno por cerca de 40 minutos ou até o palito sair limpo.</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <iframe class="iframe-100 iframe-footer" src="iframe/footer.html" frameborder="0"></iframe>
+</body>
+</html>

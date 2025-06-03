@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Receita - Green Food</title>
+  <link rel="shortcut icon" href="imagens/flaticon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/variaveis.css">
+  <style>
+    .container {
+      overflow: hidden;
+    }
+
+    .titulo-receita h2 {
+      font-size: var(--titulo-tamanho);
+      margin-bottom: 0;
+    }
+
+    .titulo-receita span {
+      color: var(--cor-primaria);
+      font-weight: bold;
+    }
+
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+
+    .ingredientes, .preparacao {
+      flex: 1;
+    }
+
+    .ingredientes table, .tempo table {
+      border: 1px solid var(--cor-texto);
+      border-radius: 12px;
+      width: 100%;
+    }
+
+    .ingredientes td, .tempo td {
+      padding: 8px;
+    }
+
+    .ingredientes td:first-child {
+      width: 30px;
+      text-align: center;
+    }
+
+    .preparacao table {
+      width: 100%;
+    }
+
+    .preparacao td {
+      padding: 10px 0;
+      vertical-align: top;
+    }
+
+    .preparacao .numero {
+      font-weight: bold;
+      color: var(--cor-primaria);
+      padding-right: 10px;
+    }
+  </style>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <iframe class="iframe-100" src="iframe/header.html" frameborder="0"></iframe>
+
+  <div class="container width-80">
+    <div class="titulo-receita">
+      <a href="receitas.html"><img src="imagens/back.png" /></a>
+      <h2>Bolo Húmido de Iogurte e Mirtilos</h2>
+      <p>Receita de <span>Carlos Afonso</span></p>
+    </div>
+
+    <div>
+      <iframe width="900px" height="500px" src="https://www.youtube.com/embed/kqs2FLIHYPo?si=KILnrVjD3IPt8HYB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="tempo">
+      <h3>Tempos</h3>
+      <table>
+        <tr><td>⏳</td><td><strong>Tempo Total:</strong> 1 hora</td></tr>
+      </table>
+    </div>
+
+    <div class="info">
+      <div class="ingredientes">
+        <h3>Ingredientes (6 porções)</h3>
+        <table>
+          <tr><td>🍋</td><td>1 Kokosgurte de Manga Maracujá My Vay® (usar o copo como medida)</td></tr>
+          <tr><td>🥛</td><td>1 medida de bebida de aveia</td></tr>
+          <tr><td>🌾</td><td>2 medidas de farinha de trigo</td></tr>
+          <tr><td>🥥</td><td>4 colheres de sopa de óleo de coco</td></tr>
+          <tr><td>🍯</td><td>1/2 medida de xarope de agave</td></tr>
+          <tr><td>🍋</td><td>2 colheres de sopa de sumo de limão</td></tr>
+          <tr><td>⚗️</td><td>4 colheres de chá de fermento em pó</td></tr>
+          <tr><td>🫐</td><td>150 g de mirtilos</td></tr>
+          <tr><td>🍰</td><td><strong>Cobertura:</strong> 1 Kokosgurte de Mirtilo My Vay®</td></tr>
+          <tr><td>🍋</td><td>1/2 limão (raspas, opcional)</td></tr>
+        </table>
+      </div>
+
+      <div class="preparacao">
+        <h3>Preparação</h3>
+        <table>
+          <tr><td class="numero">1.</td><td>Prepara o “buttermilk”: mistura a bebida de aveia com o sumo de limão e deixa repousar por 5 minutos.</td></tr>
+          <tr><td class="numero">2.</td><td>Pré-aquece o forno a 180ºC.</td></tr>
+          <tr><td class="numero">3.</td><td>Numa taça, mistura a farinha com o fermento.</td></tr>
+          <tr><td class="numero">4.</td><td>Noutra taça, junta o Kokosgurte de Manga Maracujá, a bebida de aveia, o óleo de coco, o xarope de agave e o buttermilk. Mexe até obter uma mistura homogénea.</td></tr>
+          <tr><td class="numero">5.</td><td>Adiciona os ingredientes húmidos aos secos e envolve levemente. A massa pode conter alguns grumos.</td></tr>
+          <tr><td class="numero">6.</td><td>Envolve os mirtilos em farinha antes de os adicionar à massa (isso evita que afundem).</td></tr>
+          <tr><td class="numero">7.</td><td>Adiciona os mirtilos à massa e mistura suavemente.</td></tr>
+          <tr><td class="numero">8.</td><td>Coloca a massa numa forma e leva ao forno por cerca de 45 minutos.</td></tr>
+          <tr><td class="numero">9.</td><td>Deixa o bolo arrefecer antes de desenformar.</td></tr>
+          <tr><td class="numero">10.</td><td>Decora com o Kokosgurte de Mirtilo, mirtilos frescos e raspas de limão.</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <iframe class="iframe-100 iframe-footer" src="iframe/footer.html" frameborder="0"></iframe>
+</body>
+</html>

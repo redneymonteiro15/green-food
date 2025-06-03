@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Receita - Green Food</title>
+  <link rel="shortcut icon" href="imagens/flaticon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/variaveis.css">
+  <style>
+    .container{
+      overflow: hidden;
+    }
+    .titulo-receita h2 {
+      font-size: var(--titulo-tamanho);
+      margin-bottom: 0;
+    }
+
+    .titulo-receita span{
+        color: var(--cor-primaria);
+        font-weight: bold;
+    }
+
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+
+    .ingredientes, .preparacao {
+      flex: 1;
+    }
+
+    .ingredientes table {
+      border: 1px solid var(--cor-texto);
+      border-radius: 12px;
+      width: 100%;
+    }
+
+    .ingredientes td {
+      padding: 8px;
+    }
+
+    .ingredientes td:first-child {
+      width: 30px;
+      text-align: center;
+    }
+
+    .preparacao table {
+      width: 100%;
+    }
+
+    .preparacao td {
+      padding: 10px 0;
+      vertical-align: top;
+    }
+
+    .preparacao .numero {
+      font-weight: bold;
+      color: var(--cor-primaria);
+      padding-right: 10px;
+    }
+  </style>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <iframe class="iframe-100" src="iframe/header.html" frameborder="0"></iframe>
+  
+  <div class="container width-80">
+    <div class="titulo-receita">
+        <a href="receitas.html"><img src="imagens/back.png" /></a>
+        <h2>Ratatouille</h2>
+        <p>Receita de <span>Carlos Afonso</span></p>
+    </div>
+
+    <div>
+        <iframe width="900px" height="500px" src="https://www.youtube.com/embed/XIruqlSq4Ac?si=Bovf-sdupfK4c7EX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="info">
+      <div class="ingredientes">
+        <h3>Ingredientes</h3>
+        <table>
+          <tr><td>🌱</td><td>2 batatas vermelhas</td></tr>
+          <tr><td>🌱</td><td>1 beringela</td></tr>
+          <tr><td>🌱</td><td>2 batatas doces</td></tr>
+          <tr><td>🌱</td><td>2 curgetes</td></tr>
+          <tr><td>🌱</td><td>1 pimento vermelho</td></tr>
+          <tr><td>🌱</td><td>2 cebolas</td></tr>
+          <tr><td>🌱</td><td>Pimenta preta moída q.b</td></tr>
+          <tr><td>🌱</td><td>Azeite q.b</td></tr>
+          <tr><td>🌱</td><td>Queijo parmesão ralado</td></tr>
+          <tr><td>🌱</td><td>Molho de Tomate</td></tr>
+          <tr><td>🌱</td><td>Azeite q.b</td></tr>
+          <tr><td>🌱</td><td>1 cebola</td></tr>
+          <tr><td>🌱</td><td>1 cabeça de alho</td></tr>
+          <tr><td>🌱</td><td>20 tomates pelados e sem sementes</td></tr>
+          <tr><td>🌱</td><td>1 cálice de vinho branco</td></tr>
+          <tr><td>🌱</td><td>Folhas de manjericão fresco</td></tr>
+          <tr><td>🌱</td><td>2 c. de sobremesa de açúcar</td></tr>
+          <tr><td>🌱</td><td>1 lata de polpa de tomate</td></tr>
+        </table>
+      </div>
+
+      <div class="preparacao">
+        <h3>Preparação</h3>
+        <table>
+          <tr><td class="numero">1.</td><td><strong>Molho de Tomate:</strong> Pique finamente 1 cebola e junte a um tacho com um bom fio de azeite.</td></tr>
+          <tr><td class="numero">2.</td><td>De seguida, adicione 1 cabeça de alho também bem picada. Refogue até ganhar cor.</td></tr>
+          <tr><td class="numero">3.</td><td>Corte cerca de 20 tomates pelados e sem sementes e junte ao tacho. Mexa, tempere com vinho branco, sal q.b e umas folhas de manjericão fresco.</td></tr>
+          <tr><td class="numero">4.</td><td>Tape e coloque em lume branco. Durante, no mínimo 30 minutos, verifique regularmente e retifique temperos.</td></tr>
+          <tr><td class="numero">5.</td><td><strong>Legumes:</strong> Enquanto isso, corte todos os legumes, com casca, em rodelas: 2 batatas vermelhas, 1 beringela, 2 batatas doces, 2 curgetes, 1 pimento vermelho sem sementes e partes brancas, e 2 cebolas.</td></tr>
+          <tr><td class="numero">6.</td><td>Cerca de 20 minutos depois, junte ao molho 1 lata de polpa de tomate e tape novamente.</td></tr>
+          <tr><td class="numero">7.</td><td>Quando ferver, desligue o lume.</td></tr>
+          <tr><td class="numero">8.</td><td><strong>Preparação:</strong> Numa travessa de ir ao forno, coloque uma camada do molho de tomate.</td></tr>
+          <tr><td class="numero">9.</td><td>De seguida, posicione os legumes cortados intercalando-os, em formato de espiral. Se necessário, ajuste o tamanho dos mesmos.</td></tr>
+          <tr><td class="numero">10.</td><td>Assim que terminar, regue com 1 fio de azeite e tempere com sal q.b e pimenta preta moída q.b.</td></tr>
+          <tr><td class="numero">11.</td><td>Leve ao forno pré-aquecido a 150ºC por cerca de 30 minutos. No final, triture o molho de tomate e sirva um prato de Ratatouille com molho por cima, queijo parmesão ralado e pimenta preta moída q.b.</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <iframe class="iframe-100 iframe-footer" src="iframe/footer.html" frameborder="0"></iframe>
+</body>
+</html>

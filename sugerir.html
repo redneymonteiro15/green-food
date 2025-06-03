@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Sugerir receita - Green Food</title>
+  <link rel="shortcut icon" href="imagens/flaticon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/variaveis.css">
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      background-color: var(--cor-background);
+      overflow: hidden;
+    }
+
+    .sub-links{
+        display: flex;
+    }
+    .sub-links .button{
+        margin-right: 20px;
+    }
+
+    form{
+      background-color: var(--cor-branca);
+      border-radius: 12px;
+      padding: 50px;
+      width: 400px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    form label,
+    form input,
+    form textarea,
+    form button{
+      display: block;
+      width: 95%;
+      margin-bottom: 5px;
+    }
+
+    form input,
+    form textarea{
+      height: 30px;
+      border-radius: 12px;
+      border: 2px solid var(--cor-texto);
+      padding: 5px 10px;
+    }
+    form textarea{
+      height: 100px;
+    }
+    form .btn{
+      width: 100%;
+      margin-top: 20px;
+    }
+    
+  </style>
+</head>
+<body>
+  <iframe class="iframe-100" src="iframe/header.html" frameborder="0"></iframe>
+
+  <div class="container width-80" name="iframe-meio">
+    <form id="form-sugerir" action="#" method="POST">
+      <h2>Sugerir Receita</h2>
+      <div>
+        <label>Nome da receita</label>
+        <input type="text"  required/>
+      </div>
+      <div>
+        <label>Ingredientes</label>
+        <textarea required></textarea>
+      </div>
+      <div>
+        <label>Instruções</label>
+        <textarea required></textarea>
+      </div>
+      <div>
+        <button class="btn" type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+  <iframe class="iframe-100 iframe-footer" src="iframe/footer.html" frameborder="0"></iframe>
+</body>
+</html>
+<script src="js/script.js"></script>

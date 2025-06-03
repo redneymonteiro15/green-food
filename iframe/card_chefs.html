@@ -1,0 +1,74 @@
+
+
+<link rel="stylesheet" href="../css/variaveis.css">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: var(--fonte-titulo);
+    }
+
+    h2 {
+        color: var(--cor-texto);
+        font-size: var(--titulo-tamanho);
+        margin-bottom: 20px;
+    }
+
+    .receitas-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {
+        background-color: #ddd;
+        border-radius: 12px;
+        overflow: hidden;
+        width: 300px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.02);
+    }
+
+    .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card p {
+        padding: 15px;
+        margin: 0;
+        text-align: left;
+        font-size: var(--texto-tamanho);
+        color: #000;
+        font-family: var(--fonte-texto);
+    }
+
+    .ver-tudo {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+</style>
+<script src="../js/script.js"></script>
+<body>
+  <h2>Chefes</h2>
+  <div class="receitas-container">
+    <div class="card">
+      <img src="../imagens/chefes/carlos_afonso.jpg" alt="Chef Carlos Afonso">
+      <p>Carlos Afonso</p>
+    </div>
+    <div class="card">
+      <img src="../imagens/chefes/tiago_fernandes.jpg" alt="Chef Tiago Fernandes">
+      <p>Tiago Fernandes</p>
+    </div>
+    <div class="card">
+      <img src="../imagens/chefes/rute_silva.jpg" alt="Rute Silva">
+      <p>Rute Silva</p>
+    </div>
+  </div>
+</body>

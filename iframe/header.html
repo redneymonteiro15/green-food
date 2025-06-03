@@ -1,0 +1,82 @@
+
+<link rel="stylesheet" href="../css/variaveis.css">
+<meta charset="UTF-8">
+
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-primaria);
+    padding: 10px 30px;
+    font-family: var(--fonte-titulo);
+  }
+
+  .logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-area img {
+    height: 50px;
+  }
+
+  .logo-area span {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--cor-branca);
+    line-height: 1.2;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 25px;
+    margin-left: 50px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: var(--cor-branca);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+
+  .search-box input {
+    padding: 10px 20px;
+    border: var(--borda-espessura) solid var(--cor-branca);
+    border-radius: var(--borda-raio);
+    font-size: 16px;
+    background-color: transparent;
+    color: var(--cor-branca);
+  }
+
+  .search-box input::placeholder {
+    color: var(--cor-branca);
+  }
+</style>
+<script src="../js/script.js"></script>
+<div class="header">
+  <div class="logo-area">
+    <img src="../imagens/Logo com fundo/logo_primary_white.png" alt="Logo Green Food" />
+  </div>
+  <div class="nav-links">
+    <a href="../home.html" target="_parent">Home</a>
+    <a href="../sobre.html" target="_parent">Sobre Nós</a>
+    <a href="../receitas.html" target="_parent">Receitas</a>
+    <a href="../sugerir.html" target="_parent">Sugerir receitas</a>
+    <a href="../contactos.html" target="_parent">Contatos</a>
+  </div>
+  <div class="search-box">
+    <input type="text" placeholder="Pesquisar por conteúdo..." />
+  </div>
+</div>

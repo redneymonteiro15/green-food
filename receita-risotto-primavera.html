@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Receita - Green Food</title>
+  <link rel="shortcut icon" href="imagens/flaticon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/variaveis.css">
+  <style>
+    .container {
+      overflow: hidden;
+    }
+
+    .titulo-receita h2 {
+      font-size: var(--titulo-tamanho);
+      margin-bottom: 0;
+    }
+
+    .titulo-receita span {
+      color: var(--cor-primaria);
+      font-weight: bold;
+    }
+
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+
+    .ingredientes, .preparacao {
+      flex: 1;
+    }
+
+    .ingredientes table, .tempo table {
+      border: 1px solid var(--cor-texto);
+      border-radius: 12px;
+      width: 100%;
+    }
+
+    .ingredientes td, .tempo td {
+      padding: 8px;
+    }
+
+    .ingredientes td:first-child {
+      width: 30px;
+      text-align: center;
+    }
+
+    .preparacao table {
+      width: 100%;
+    }
+
+    .preparacao td {
+      padding: 10px 0;
+      vertical-align: top;
+    }
+
+    .preparacao .numero {
+      font-weight: bold;
+      color: var(--cor-primaria);
+      padding-right: 10px;
+    }
+  </style>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <iframe class="iframe-100" src="iframe/header.html" frameborder="0"></iframe>
+  <div class="container width-80">
+    <div class="titulo-receita">
+      <a href="receitas.html"><img src="imagens/back.png" /></a>
+      <h2>Risotto Primavera</h2>
+      <p>Receita de <span>Carlos Afonso</span></p>
+    </div>
+
+    <div>
+      <iframe width="900" height="500" src="https://www.youtube.com/embed/0qkk8mP6yb4?si=UUO7DaYYz1BO_F75" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="tempo">
+      <h3>Tempos</h3>
+      <table>
+        <tr><td>⏱️</td><td><strong>Tempo de Confeção:</strong> 10 minutos</td></tr>
+        <tr><td>🔥</td><td><strong>Tempo de Cozedura:</strong> 20 minutos</td></tr>
+        <tr><td>⏳</td><td><strong>Tempo Total:</strong> 30 minutos</td></tr>
+      </table>
+    </div>
+
+    <div class="info">
+      <div class="ingredientes">
+        <h3>Ingredientes</h3>
+        <table>
+          <tr><td>🫒</td><td>1 c. de sopa de azeite</td></tr>
+          <tr><td>🧅</td><td>100 g de chalotas finamente picadas</td></tr>
+          <tr><td>🧄</td><td>3 dentes de alho</td></tr>
+          <tr><td>🌿</td><td>1/2 c. de chá de tomilho</td></tr>
+          <tr><td>🌿</td><td>1/2 c. de chá de alecrim</td></tr>
+          <tr><td>🍚</td><td>350 g de arroz de risotto</td></tr>
+          <tr><td>🍷</td><td>125 ml de vinho branco</td></tr>
+          <tr><td>🥣</td><td>1,5 l de caldo de legumes quente</td></tr>
+          <tr><td>🟢</td><td>250 g de ervilhas congeladas</td></tr>
+          <tr><td>🫑</td><td>2 pimentos assados</td></tr>
+          <tr><td>🍋</td><td>1 limão (raspa + sumo)</td></tr>
+        </table>
+      </div>
+
+      <div class="preparacao">
+        <h3>Preparação</h3>
+        <table>
+          <tr><td class="numero">1.</td><td>Corta os pimentos assados ​​em tiras.</td></tr>
+          <tr><td class="numero">2.</td><td>Aquece o azeite numa panela grande e aloura as chalotas por alguns minutos.</td></tr>
+          <tr><td class="numero">3.</td><td>Esmaga o alho e adiciona o tomilho e o alecrim. Junta o arroz de risotto e mexe durante 2 minutos.</td></tr>
+          <tr><td class="numero">4.</td><td>Adiciona o vinho branco e deixa ferver até evaporar.</td></tr>
+          <tr><td class="numero">5.</td><td>Vai adicionando o caldo de legumes aos poucos (1 chávena de cada vez), mexendo sempre.</td></tr>
+          <tr><td class="numero">6.</td><td>Com a última chávena de caldo, adiciona também as ervilhas e os pimentos.</td></tr>
+          <tr><td class="numero">7.</td><td>Quando o caldo estiver completamente absorvido, junta a raspa e o sumo de limão e salsa a gosto.</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Green Food</title>
+  <link rel="shortcut icon" href="imagens/flaticon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/variaveis.css">
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    .navbar img{
+        margin-top: -90px;
+        width: 100%;
+    }
+
+    
+  </style>
+  <script src="js/script.js"></script>
+</head>
+<body>
+    <iframe class="iframe-100" src="iframe/header.html" frameborder="0"></iframe>
+
+    <div>
+        <div class="navbar">
+            <img src="imagens/navbar.jpg" />
+        </div>
+        <div class="container">
+            <div class="width-80">
+                <div>
+                    <h2>Receitas</h2>
+                    <div class="receitas-container">
+                        <div class="card" onclick="openHref('receita-ratatouille.html')">
+                            <img src="imagens/receitas/ratatouille.jpg" alt="Ratatouille">
+                            <p>Ratatouille</p>
+                        </div>
+                        <div class="card" onclick="openHref('receita-risotto-primavera.html')">
+                            <img src="imagens/receitas/risotto-primavera.jpg" alt="Risotto Primavera">
+                            <p>Risotto Primavera</p>
+                        </div>
+                        <div class="card" onclick="openHref('receita-pao-marmore-de-banana.html')">
+                            <img src="imagens/receitas/pao-marmore-banana.jpg" alt="Pão Mármore Banana">
+                            <p>Pão Mármore Banana</p>
+                        </div>
+                        <div class="card" onclick="openHref('receita-bolo-mirtilos.html')">
+                            <img src="imagens/receitas/bolo-umido-iogurte-mirtilos.jpg" alt="Bolo Húmido">
+                            <p>Bolo Húmido de Iogurte e Mirtilos</p>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <a onclick="openHref('receitas.html')">Ver tudo</a>
+                    </div>
+                </div>
+                <div>
+                    <iframe class="margin-top-50" src="iframe/card_chefs.html" frameborder="0" name="chefes-todos" width="100%" height="380px" ></iframe>
+                    <div class="button">
+                        <a onclick="openHref('equipa.html')">Ver tudo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <iframe class="iframe-100 iframe-footer" src="iframe/footer.html" frameborder="0"></iframe>
+</body>
+</html>

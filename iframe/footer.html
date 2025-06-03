@@ -1,0 +1,89 @@
+
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="../css/variaveis.css">
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    background-color: var(--cor-primaria);
+    font-family: var(--fonte-texto);
+    color: var(--cor-branca);
+  }
+
+  .footer .logo-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer .logo-area img {
+    height: 100px;
+  }
+
+  .footer .logo-area span {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .footer .coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer .coluna h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .footer .coluna a,
+  .footer .coluna p {
+    font-size: 16px;
+    color: var(--cor-branca);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .footer .coluna a:hover {
+    text-decoration: underline;
+  }
+</style>
+<script src="../js/script.js"></script>
+<div class="footer">
+  <div class="logo-area">
+    <img src="../imagens/Logo com fundo/logo_primary_white.png" alt="Logo Green Food">
+  </div>
+
+  <div class="coluna">
+    <h4>O nosso site</h4>
+    <a href="../home.html" target="_parent">Home</a>
+    <a href="../sobre.html" target="_parent">Sobre Nós</a>
+    <a href="../receitas.html" target="_parent">Receitas</a>
+    <a href="../sugerir.html" target="_parent">Sugerir Receitas</a>
+    <a href="../contactos.html" target="_parent">Contatos</a>
+  </div>
+
+  <div class="coluna">
+    <h4>Siga-nos</h4>
+    <a href="https://facebook.com" target="_blank">facebook</a>
+    <a href="https://instagram.com" target="_blank">instagram</a>
+    <a href="https://youtube.com" target="_blank">youtube</a>
+  </div>
+
+  <div class="coluna">
+    <h4>Contatos</h4>
+    <a href="tel:+351923234343">(+351) 923 23 4343</a>
+    <a href="mailto:geral@greenfood.pt">geral@greenfood.pt</a>
+  </div>
+</div>
+

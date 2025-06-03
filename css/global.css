@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--cor-texto);
+    font-family: var(--fonte-texto);
+    background-color: var(--cor-background);
+}
+
+.width-80{
+    width: 80%;
+    margin: auto;
+}
+
+.margin-top-50{
+    margin-top: 50px;
+}
+
+
+.button {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+.button a,
+.btn{
+    padding: 10px 30px;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 25px;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: transparent;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.button a:hover,
+.btn:hover{
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+.container{
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+
+h2 {
+    color: var(--cor-texto);
+    font-size: var(--titulo-tamanho);
+    margin-bottom: 20px;
+}
+
+.receitas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card p {
+    padding: 15px;
+    margin: 0;
+    text-align: left;
+    font-size: var(--texto-tamanho);
+    color: #000;
+    font-family: var(--fonte-texto);
+}
+.ver-tudo {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.iframe-100{
+    width: 100%;
+}
+
+.iframe-footer{
+    height: 267px;
+}
